@@ -14,10 +14,14 @@ urlpatterns = [
 
     path('contact/', views.contact,name='contact'),
     path('Patient/', views.Patient,name='Patient'),
+    path('doctor/', views.doctor,name='doctor'),
     path('appointment/', views.Appoint,name='Appoint'),
     path('show/', views.show,name='show'),
     path('edit/<int:id>', views.delete),
     path('update/<int:id>', views.delete),
     path('delete/<int:id>', views.delete),
+    path('uploadimage/', views.upload_image, name='upload'),
+    path('showimage/', views.show_image, name='image'),
+    path('imagedelete/<int:id>', views.imagedelete),
 
 ]
