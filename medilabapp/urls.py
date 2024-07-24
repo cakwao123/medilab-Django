@@ -24,4 +24,8 @@ urlpatterns = [
     path('showimage/', views.show_image, name='image'),
     path('imagedelete/<int:id>', views.imagedelete),
 
+    path('pay/', views.pay, name='pay'),
+    path('stk/', views.stk, name='stk'),
+    path('token/', views.token, name='token'),
+
 ]
